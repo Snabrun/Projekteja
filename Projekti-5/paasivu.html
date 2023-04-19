@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Muistipeli</title>
+    <link rel="stylesheet" href="peli.css">
+  </head>
+  <body>
+      <script>
+      function saveSettings(type) {
+          document.cookie = `game_type=${type}`;
+          document.getElementsByClassName("button-9")[0].disabled = false;
+      }
+      </script>
+      <div class="kKuvat">
+        <div class="kuvat">
+          <img src="kuvat/0.jpg" alt="">
+          <img src="kuvat/1.jpg" alt="">
+          <img src="kuvat/2.jpg" alt="">
+          <img src="kuvat/3.jpg" alt="">
+          <img src="kuvat/4.jpg" alt="">
+          <img src="kuvat/5.jpg" alt="">
+          <img src="kuvat/6.jpg" alt="">
+          <img src="kuvat/7.jpg" alt="">
+          <img src="kuvat/8.jpg" alt="">
+          <img src="kuvat/9.jpg" alt="">
+          <img src="kuvat/10.jpg" alt="">
+          <img src="kuvat/11.jpg" alt="">
+          <img src="kuvat/12.jpg" alt="">
+          <img src="kuvat/13.jpg" alt="">
+          <img src="kuvat/14.jpg" alt="">
+          <img src="kuvat/15.jpg" alt="">
+          <img src="kuvat/16.jpg" alt="">
+          <img src="kuvat/17.jpg" alt="">
+
+        </div>
+      </div>
+
+    <div class="psivu">
+      <div class="logotip">
+        <div class="logo">
+          <img src="kuvat/logo.png" alt="">
+
+        </div>
+
+      </div>
+      <div class="info">
+        <div class="strelka">
+          <img src="kuvat/strelka.png" alt="">
+        </div>
+        <div class="info-bar">
+          <p>Mielenkiintoinen tosiasia: Käytin Midjourney-hermoverkkoa tämän pelin kaikkien kuvien luomiseen, mukaan lukien jopa logon ja taustan.</p>
+
+        </div>
+
+      </div>
+      <div class="pelinRules">
+        <div class="rules">
+          <h1>Muistipeli</h1>
+          <p>Tämä peli koostuu laudalta, jonka kortit on käännetty ylösalaisin. Jokaisella kortilla on pari. Kääntämällä kortteja painamalla näet, mikä kuva niissä on. Jos kahdella kortilla on sama kuva, ne pysyvät auki ja sinulle hyvitetään yksi voittopiste. Jos käänsit kaksi korttia eri kuvilla, ne kääntyvät lyhyen ajan kuluttua takaisin.
+          </br>   Pelin tehtävänä on avata koko pelikenttä kokonaan, eli löytää kaikki korttiparit.
+Pelissä on myös kolme vaikeutta. Mitä korkeampi vaikeusaste, sitä enemmän kortteja kentällä.</p>
+        </div>
+      </div>
+      <div class="pelinSettings">
+        <div class="settings">
+          <h1>Settings</h1>
+          <div class="settingsText">
+          <p>Valitse pelin vaikeusaste</p>
+          <div>
+            <input onclick="saveSettings(8)" type="radio" id="diffChoice1" name="diff" value="4x4"/>
+            <label for="diffChoice1">4x4</label></br>
+            <input  onclick="saveSettings(12)" type="radio" id="diffChoice2" name="diff" value="4x5" />
+            <label for="diffChoice2">4x5</label></br>
+            <input  onclick="saveSettings(18)"type="radio" id="diffChoice3" name="diff" value="6x6" />
+            <label for="diffChoice3">6x6</label>
+          </div>
+        </div>
+        <button class="button-9" role="button" onclick="window.location='pelisivu.html'" disabled>PLAY</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

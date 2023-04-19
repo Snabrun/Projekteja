@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="projekti-6.css">
+    <script src="projekti-6.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <form action="data.html" class="decor" method="get" onSubmit="return formValue(this)"  id="client-form">
+    <div class="form-left-decoration"></div>
+    <div class="form-right-decoration"></div>
+    <div class="circle"></div>
+    <div class="form-inner">
+    <h3>Jätä tietosi </h3>
+    <input type="text" name="firstName" placeholder="Nimi" id="first-name" value="">
+    <input type="text" name="lastName" placeholder="Sukunimi" id="last-name" value="">
+    <input type="text" name="address" placeholder="Lähiosoite" id="form-address" value="">
+    <input type="number" name="index" placeholder="Indeksi" id="form-index" value="">
+    <input type="text" name="city" placeholder="Kaupunki" id="form-city" value="">
+    <input type="number" name="phone" placeholder="Puhelin" id="form-phone" value="">
+    <input type="email" name="email" placeholder="Sähköposti" id="form-email" value="">
+    <textarea placeholder="Viesti... (valinainen)" name="teksti" rows="3" id="tekstia"></textarea>
+    <input type="submit" value="Lähetä" onclick="formValue()">
+    </div>
+    <p class="at">Keuda 2022 | Egor Shkaroburov ©</p>
+    </form>
+
+  </body>
+</html>
